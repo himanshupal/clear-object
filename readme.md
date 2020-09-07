@@ -13,8 +13,8 @@ npm i clear-object
 ```js
 const clearObject = require("clear-object");
 
-// or with ES6 syntax
-import clearObject from "clear-object";
+// or using ES6 syntax
+// import clearObject from "clear-object";
 
 const object = {
 	alpha: {
@@ -38,9 +38,9 @@ const object = {
 	},
 };
 
-const filteredDefault = clearObject(object);
+clearObject(object);
 
-console.log(filteredDefault);
+console.log(object);
 
 // Prints
 {

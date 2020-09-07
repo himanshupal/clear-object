@@ -1,13 +1,14 @@
 {
 	"name": "clear-object",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"keywords": [
 		"filter",
 		"null",
 		"object",
+		"remove",
 		"undefined"
 	],
-	"description": "Remove undefined, null, false and user provided values from JS object",
+	"description": "Filters an Object removing undefined, null, false & empty values",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
