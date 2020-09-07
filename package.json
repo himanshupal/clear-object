@@ -1,11 +1,16 @@
 {
 	"name": "clear-object",
 	"version": "0.1.0",
+	"keywords": [
+		"filter",
+		"null",
+		"object",
+		"undefined"
+	],
 	"description": "Remove undefined, null, false and user provided values from JS object",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
-		"prepublish": "tsc",
 		"build": "tsc"
 	},
 	"author": "Himanshu Pal",
