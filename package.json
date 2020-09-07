@@ -1,0 +1,21 @@
+{
+	"name": "clear-object",
+	"version": "0.1.0",
+	"description": "Remove undefined, null, false and user provided values from JS object",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"prepublish": "tsc",
+		"build": "tsc"
+	},
+	"author": "Himanshu Pal",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:himanshupal/clear-object.git"
+	},
+	"license": "Unlicense",
+	"private": false,
+	"devDependencies": {
+		"typescript": "^4.0.2"
+	}
+}
