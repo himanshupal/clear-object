@@ -4,7 +4,7 @@ interface params {
 	excludeUndefined?: Boolean;
 }
 
-const filterObject = (source: Object, options?: params, depth?: number) => {
+export const clearObject = (source: Object, options?: params, depth?: number) => {
 	const { excludeNull, excludeUndefined, excludeFalse } = options || {};
 
 	Object.keys(source).forEach((child) => {
@@ -16,8 +16,8 @@ const filterObject = (source: Object, options?: params, depth?: number) => {
 		const isObject: Boolean = typeof node === `object` && node !== null; // Because typeof null is also object in JS
 
 		if (isObject)
-			if (!depthDefined) filterObject(node, options);
-			else filterObject(node, options, depth - 1);
+			if (!depthDefined) clearObject(node, options);
+			else clearObject(node, options, depth - 1);
 
 		if (excludeNull && node === null) delete source[child];
 
@@ -30,5 +30,3 @@ const filterObject = (source: Object, options?: params, depth?: number) => {
 		if (isObject && !Object.keys(node).length) delete source[child]; // Deletes empty child
 	});
 };
-
-export default filterObject;

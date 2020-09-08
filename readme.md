@@ -11,10 +11,10 @@ npm i clear-object
 ## Usage
 
 ```js
-const clearObject = require("clear-object");
+const { clearObject } = require("clear-object");
 
-// or using ES6 syntax
-// import clearObject from "clear-object";
+// or use ES6 syntax
+// import { clearObject } from "clear-object";
 
 const object = {
 	alpha: {
